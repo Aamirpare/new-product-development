@@ -1,0 +1,15 @@
+@baseUrl = http://localhost:9000
+GET {{baseUrl}}
+###
+
+POST {{baseUrl}}/users
+###
+
+PUT {{baseUrl}}/users
+###
+
+GET {{baseUrl}}/api/v1/users
+###
+
+POST {{baseUrl}}/api/v1/users
+###

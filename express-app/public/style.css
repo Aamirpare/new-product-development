@@ -1,0 +1,29 @@
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.table {
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #333;
+    padding: 10px;
+}
+
+.form-group {
+    margin: 5px auto;
+}
+
+.form-group input {
+    padding: 8px 10px;
+}
+
+.form-group button {
+    padding: 8px 10px;
+    margin-left: 47px;
+}
