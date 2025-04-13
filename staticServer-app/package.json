@@ -1,0 +1,15 @@
+{
+  "name": "staticserver-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "static-server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon staic-server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mime-types": "^2.1.35"
+  }
+}

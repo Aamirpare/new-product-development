@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Technologies</title>
+
+    <!-- Google font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+    <div class="image-container">
+        <img src="./images/aamir-1.jpg" alt="Image not available">
+    </div>
+    <div class="introduction">
+        <h1 class="text-shadow">Welcome to the Web Technologies</h1>
+        <marquee direction="up" height="450px">
+            <pre>
+                <b>Author: Aamir Pare</b>
+                Description: Building a static file server in Node JS.
+                Express provides a static middleware for this purpose.
+                But wirting yourself from the gound zeor helps students to
+                understand clearly how things work at low level.
+                Date: 08 March, 2025
+                Location: G-11/4 Home, Islamabad
+
+
+                <b>The Problem Building the Static Server in Node JS</b>
+                ====================================================
+
+                1. Create an HTTP Server to serve the static content.
+
+                2. It must server different type of file, normally css, javascript, 
+                   png, jpg, ico, json and etc..
+                
+                3. Must default to the index.html at the root leve request.
+
+                4. Must default to the index.html in the subfolders of public folder, 
+                   when path doesn't contain the file.
+                
+                5. Must set the content type according to the resource to be served.
+                
+                6. Must serve a 404 if the resource doen't exist.
+            </pre>
+        </marquee>
+    </div>
+
+    <!-- <button id="btn-play">Play</button> -->
+    <audio id="audio-player" src="../resources/track-1.mp3" loop hidden></audio>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/play-audio.js"></script>
+</body>
+
+</html>
