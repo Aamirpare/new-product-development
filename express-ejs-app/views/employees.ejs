@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System | <%= title %>
+    </title>
+
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        td,
+        th {
+            padding: 10px;
+            border-bottom: 1px solid #333;
+        }
+
+        .message {
+            color: red;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <%- include("./partials/navigation.ejs") %>
+
+        <% const heading="All Employees" %>
+
+            <h1>
+                <%= heading %>
+            </h1>
+
+            <% if(users.length> 0 ){%>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Age</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% for(const user of users) { %>
+                            <tr>
+                                <td>
+                                    <%= user.id %>
+                                </td>
+                                <td>
+                                    <%= user.name %>
+                                </td>
+                                <td>
+                                    <%= user.email %>
+                                </td>
+                                <td>
+                                    <%= user.age%>
+                                </td>
+                            </tr>
+                            <%}%>
+                    </tbody>
+                </table>
+                <%}else{%>
+                    <div class="message">There are no records.</div>
+                    <% }%>
+
+</body>
+
+</html>
