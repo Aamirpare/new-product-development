@@ -1,0 +1,11 @@
+@baseUrl = http://localhost:4200
+
+GET {{baseUrl}}/users
+Authorization: Basic admin:secret
+
+###
+
+GET {{baseUrl}}/students
+Authorization: Basic admin:secret
+
+###
